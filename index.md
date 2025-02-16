@@ -1,3 +1,7 @@
+* TOC
+{:toc}
+
+
 # General Design
 
 If you've ever worked with other backtesting frameworks, you'd expect to implement your trading strategy by taking a Python class, overriding some methods, and then using a limited set of commands to communicate with the backtester, such as to place orders. Using vectorbt isn't anything like that: since it's a quantitative analysis package that operates primarily on arrays, it's more similar to libraries such as Pandas than to frameworks such as backtrader.
