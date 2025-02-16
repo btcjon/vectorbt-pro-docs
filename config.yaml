@@ -5,9 +5,24 @@ url: "https://btcjon.github.io"
 
 plugins:
   - jekyll-relative-links
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
 relative_links:
   enabled: true
   collections: true
+
+# SEO settings
+lang: en
+author: btcjon
+twitter:
+  username: btcjon
+  card: summary
+social:
+  name: VectorBT PRO Documentation
+  links:
+    - https://github.com/btcjon/vectorbt-pro-docs
+
 include:
   - CONTRIBUTING.md
   - README.md

@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title | default: site.title }}</title>
+    {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!-- Add structured data for documentation -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "{{ page.title | default: site.title }}",
+      "description": "{{ page.description | default: site.description }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ site.author }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.title }}"
+      }
+    }
+    </script>
   </head>
   <body>
     <header class="page-header">
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
       
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
         {% for section in site.navigation %}
           <div class="nav-section">
             <h3>{{ section.title }}</h3>
@@ -26,8 +43,37 @@
       </nav>
     </header>
 
-    <main class="main-content">
+    <main class="main-content" role="main">
+      <!-- Add breadcrumb navigation -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="{{ site.baseurl }}/">Home</a>
+        {% if page.url != "/" %}
+          {% assign crumbs = page.url | split: '/' %}
+          {% for crumb in crumbs offset: 1 %}
+            {% if forloop.last %}
+              / <span aria-current="page">{{ page.title }}</span>
+            {% else %}
+              / <a href="{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | capitalize}}</a>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </nav>
+
       {{ content }}
+
+      <!-- Add section navigation -->
+      <nav class="section-nav" aria-label="Section navigation">
+        <div class="nav-previous">
+          {% if page.previous %}
+            <a href="{{ site.baseurl }}{{ page.previous.url }}" class="btn">&larr; Previous: {{ page.previous.title }}</a>
+          {% endif %}
+        </div>
+        <div class="nav-next">
+          {% if page.next %}
+            <a href="{{ site.baseurl }}{{ page.next.url }}" class="btn">Next: {{ page.next.title }} &rarr;</a>
+          {% endif %}
+        </div>
+      </nav>
     </main>
 
     <footer class="site-footer">
