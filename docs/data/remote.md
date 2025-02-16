@@ -1,3 +1,9 @@
+---
+id: remote
+title: Data Remote
+sidebar_label: Remote
+---
+
 Data classes that subclass [RemoteData](https://vectorbt.pro/pvt_40509f46/api/data/custom/remote/#vectorbtpro.data.custom.remote.RemoteData) specialize in pulling (mostly OHLCV) data from remote data sources. In contrast to the classes for locally stored data, they communicate with remote API endpoints and are subject to authentication, authorization, throttling, and other mechanisms that must be taken into account. Also, the amount of data to be fetched is usually not known in advance, and because most data providers have API rate limits and can return only a limited amount of data for each incoming request, there is often a need to iterate over smaller bunches of data and properly concatenate them. Fortunately, vectorbt implements a number of preset data classes that can do all the jobs above automatically.
 
 ## Arguments[¶](https://vectorbt.pro/pvt_40509f46/documentation/data/remote/#arguments "Permanent link")

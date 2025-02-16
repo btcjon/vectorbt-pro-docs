@@ -1,3 +1,9 @@
+---
+id: development
+title: Indicator Development
+sidebar_label: Development
+---
+
 VectorBT PRO implements a ton of functions and arguments for seamless development of indicators. All it takes is an indicator function and a specification of how to handle it.
 
 ## Parameters[¶](https://vectorbt.pro/pvt_40509f46/documentation/indicators/development/#parameters "Permanent link")

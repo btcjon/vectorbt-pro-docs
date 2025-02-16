@@ -1,3 +1,9 @@
+---
+id: from-signals
+title: Portfolio from Signals
+sidebar_label: From Signals
+---
+
 The method [Portfolio.from\_orders](https://vectorbt.pro/pvt_40509f46/api/portfolio/base/#vectorbtpro.portfolio.base.Portfolio.from_orders) (FO), which was discussed previously, is the most primitive simulation method: it takes order information in form of multiple array-like arguments and broadcasts them to a single shape, such that we know exactly what has to be ordered of each asset at each bar. This method requires us to have that information in advance, regardless of any events during the simulation. But what if we wanted to create an order only given that we're not currently in the market, or in general, to make an order dependable on the current simulation state? Such a conditional logic cannot be represented using orders alone - we either need to use a callback, or define more arrays. The former and the latter are both implemented by [Portfolio.from\_signals](https://vectorbt.pro/pvt_40509f46/api/portfolio/base/#vectorbtpro.portfolio.base.Portfolio.from_signals) (FS).
 
 Before we dive deep into this method, make sure to learn more about signals [here](https://vectorbt.pro/pvt_40509f46/tutorials/signal-development). In a nutshell: signals are an abstraction layer over orders. Each signal consists of four boolean values: ![1⃣](https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/31-20e3.svg ":one:") long entry, ![2⃣](https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/32-20e3.svg ":two:") long exit, ![3⃣](https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/33-20e3.svg ":three:") short entry, and ![4⃣](https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/34-20e3.svg ":four:") short exit. A combination of these values enables us to control the direction of an order relative to the current position. For example, a short entry flag will reverse the current long position, or open a new short one if we're not in the market. This way, position management can be abstracted away from order management, such that we can lean back and only express our decision of whether we're currently bullish or bearish - a perfect playground for ML models, by the way.
@@ -2739,14 +2745,22 @@ In the following example we go into a trade with 6 units, and then test two TP l
 ...     ], level=0),  
 ...     broadcast_named_args=dict(
 ...         exit_size=vbt.BCO(  
-...             vbt.Param([
-...                 np.array([3, 3]),
-...                 np.array([1, 2, 3])
-...             ], level=0, hide=True),  
-...             axis=1,
+...             vbt.Param([  
+...                 np.array([
+...                     (2, 1/4),  
+...                     (3, 1/3),
+...                     (4, 1/2),
+...                     (5, 1/1)
+...                 ], dtype=ladder_dt),
+...                 np.array([
+...                     (2, 1/2),
+...                     (4, 1/1),
+...                 ], dtype=ladder_dt),
+...             ]),
+...             axis=1,  
 ...             merge_kwargs=dict(  
 ...                 reset_index="from_start", 
-...                 fill_value=np.nan,
+...                 fill_value=np.array((-1, np.nan), dtype=ladder_dt),
 ...             )
 ...         ),
 ...         exit_size_type=vbt.BCO(

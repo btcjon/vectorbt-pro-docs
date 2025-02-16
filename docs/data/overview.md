@@ -1,3 +1,9 @@
+---
+id: overview
+title: Data Overview
+sidebar_label: Overview
+---
+
 VectorBT PRO works on Pandas and NumPy arrays, but where those arrays are coming from? Getting the financial data manually is a challenging task, especially when an exchange can return only one bunch of data at a time such that iteration over time ranges, concatenation of results, and alignment of index and columns are effectively outsourced to the user. The task gets only trickier when multiple symbols are involved.
 
 To simplify and automate data retrieval and management, vectorbt implements the [Data](https://vectorbt.pro/pvt_40509f46/api/data/base/#vectorbtpro.data.base.Data) class, which allows seamless handling of features (such as OHLC) and symbols (such as "BTC-USD"). It's a semi-abstract class, meaning you have to subclass it and define your own logic at various places to be able to use its rich functionality to the full extent. Gladly, there is a collection of custom data classes already implemented for us, but it's always good to know how to create such a data class on our own.
@@ -396,7 +402,7 @@ Date
 2020-01-02 00:00:00+00:00  8.032709e+09        0.0           0.0  
 2020-01-03 00:00:00+00:00  1.047685e+10        0.0           0.0  
 2020-01-04 00:00:00+00:00  7.430905e+09        0.0           0.0  
-2020-01-05 00:00:00+00:00  7.526675e+09        0.0           0.0 
+2020-01-05 00:00:00+00:00  7.526675e+09        0.0           0.0  
 
 ```
 

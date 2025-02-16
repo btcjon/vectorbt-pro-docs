@@ -1,6 +1,12 @@
+---
+id: overview
+title: Portfolio Overview
+sidebar_label: Overview
+---
+
 Portfolio refers to any combination of financial assets held by a trader. In the world of vectorbt, "portfolio" is a multidimensional structure capable of simulating and tracking multiple independent but also dependent portfolio instances. The main function of a portfolio is to apply a trading logic on a set of inputs to simulate a realistic trading environment, also referred to as "simulation". The outputs of such a simulation are orders and other information that can be used by the user in assessing the portfolio's performance, also referred to as "reconstruction" or "post-analysis". Both phases are isolated in nature, which enables various interesting use cases for quantitative analysis and data science.
 
-The main class concerned with simulating and analyzing portfolios (i.e., with the actual backtesting) is [Portfolio](https://vectorbt.pro/pvt_40509f46/api/portfolio/base/#vectorbtpro.portfolio.base.Portfolio), which is a regular Python class subclassing [Analyzable](https://vectorbt.pro/pvt_40509f46/api/generic/analyzable/#vectorbtpro.generic.analyzable.Analyzable) and having a range of Numba-compiled functions at its disposal. It's built similarly to other analyzable classes in the way that it has diverse class methods for instantiation from a range of inputs (such as [Portfolio.from\_signals](https://vectorbt.pro/pvt_40509f46/api/portfolio/base/#vectorbtpro.portfolio.base.Portfolio.from_signals) taking signals), it's a state-full class capable of wrapping and indexing any Pandas-like objects contained inside it, and it can compute metrics and display (sub-)plots for quick introspection of the stored data.
+The main class concerned with simulating and analyzing portfolios (i.e., with the actual backtesting) is [Portfolio](https://vectorbt.pro/pvt_40509f46/api/portfolio/base/#vectorbtpro.portfolio.base.Portfolio), which is a regular Python class subclassing [Analyzable](https://vectorbt.pro/pvt_40509f46/api/generic/analyzable/#vectorbtpro.generic.analyzable.Analyzable) and having a range of Numba-compiled functions at its disposal. It's built similarly to other analyzable classes in the way that it has diverse class methods for instantiation from a range of inputs (such as [Portfolio.from_signals](https://vectorbt.pro/pvt_40509f46/api/portfolio/base/#vectorbtpro.portfolio.base.Portfolio.from_signals) taking signals), it's a state-full class capable of wrapping and indexing any Pandas-like objects contained inside it, and it can compute metrics and display (sub-)plots for quick introspection of the stored data.
 
 ## Simulation[¶](https://vectorbt.pro/pvt_40509f46/documentation/portfolio/#simulation "Permanent link")
 
@@ -20,11 +26,11 @@ Info
 
 Even though Numba supports OOP by compiling Python classes with `@jitclass`, they are treated as functions, must be statically typed, and have performance drawbacks that don't allow us to jump on the wagon just yet.
 
-Functions related to order execution are primarily located in [portfolio.nb.core](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/). The functions implementing our primary two commands are [buy\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.buy_nb) and [sell\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.sell_nb). Among the requested size and price of an order, the primary input of each of these functions is the current account state of type [AccountState](https://vectorbt.pro/pvt_40509f46/api/portfolio/enums/#vectorbtpro.portfolio.enums.AccountState), which contains the current cash balance, position size, and other information about the current environment. Whenever we buy or sell something, the function creates and returns a new state of the same type. Furthermore, it returns an order result of type [OrderResult](https://vectorbt.pro/pvt_40509f46/api/portfolio/enums/#vectorbtpro.portfolio.enums.OrderResult), which contains the filled size, price adjusted with slippage, transaction fee, order side, status information on whether the order succeeded or failed, and valuable information about why it failed.
+Functions related to order execution are primarily located in [portfolio.nb.core](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/). The functions implementing our primary two commands are [buy_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.buy_nb) and [sell_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.sell_nb). Among the requested size and price of an order, the primary input of each of these functions is the current account state of type [AccountState](https://vectorbt.pro/pvt_40509f46/api/portfolio/enums/#vectorbtpro.portfolio.enums.AccountState), which contains the current cash balance, position size, and other information about the current environment. Whenever we buy or sell something, the function creates and returns a new state of the same type. Furthermore, it returns an order result of type [OrderResult](https://vectorbt.pro/pvt_40509f46/api/portfolio/enums/#vectorbtpro.portfolio.enums.OrderResult), which contains the filled size, price adjusted with slippage, transaction fee, order side, status information on whether the order succeeded or failed, and valuable information about why it failed.
 
 ### Buying[¶](https://vectorbt.pro/pvt_40509f46/documentation/portfolio/#buying "Permanent link")
 
-The buy operation consists of two distinct operations: "long-buy" implemented by [long\_buy\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.long_buy_nb) and "short-buy" implemented by [short\_buy\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.short_buy_nb). The first one opens or increases a long position, while the second one decreases a short position. By chaining these two operations, we can reverse a short position, which is done automatically by [buy\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.buy_nb): it checks the position we're in (if any), and calls the responsible function.
+The buy operation consists of two distinct operations: "long-buy" implemented by [long_buy_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.long_buy_nb) and "short-buy" implemented by [short_buy_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.short_buy_nb). The first one opens or increases a long position, while the second one decreases a short position. By chaining these two operations, we can reverse a short position, which is done automatically by [buy_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.buy_nb): it checks the position we're in (if any), and calls the responsible function.
 
 Let's say we have $100 available and want to buy 1 share at the price of $15:
 
@@ -269,7 +275,7 @@ ValueError: Adjusted order price is above the highest price
 
 ### Selling[¶](https://vectorbt.pro/pvt_40509f46/documentation/portfolio/#selling "Permanent link")
 
-The sell operation consists of two distinct operations: "long-sell" implemented by [long\_sell\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.long_sell_nb) and "short-sell" implemented by [short\_sell\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.short_sell_nb). The first one decreases a long position, while the second one opens or increases a short position. By chaining these two operations, we can reverse a long position, which is done automatically by [sell\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.sell_nb): it checks the position we're in (if any), and calls the responsible function.
+The sell operation consists of two distinct operations: "long-sell" implemented by [long_sell_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.long_sell_nb) and "short-sell" implemented by [short_sell_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.short_sell_nb). The first one decreases a long position, while the second one opens or increases a short position. By chaining these two operations, we can reverse a long position, which is done automatically by [sell_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.sell_nb): it checks the position we're in (if any), and calls the responsible function.
 
 The function for selling takes the same arguments but uses them in the opposite direction. Let's remove 2 shares from a position of 10 shares:
 
@@ -316,7 +322,7 @@ The size in the order result remains positive but the side has changed from 0 to
 
 ### Shorting[¶](https://vectorbt.pro/pvt_40509f46/documentation/portfolio/#shorting "Permanent link")
 
-Shorting is a regular sell operation with [sell\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.sell_nb), but with one exception: it now involves the debt as well as the locked cash balance. Whenever we short, we are borrowing shares and selling them to buyers willing to pay the market price. This operation increases the cash balance and turns the position size negative. It also registers the received cash amount as a debt, and subtracts it from the free cash balance. Whenever we buy some shares back, the debt decreases proportionally to the value of the shares bought back, while the free cash might increase depending upon whether the price was higher or lower than the average short-selling price. Whenever we cover the short position entirely, the debt becomes zero and the free cash balance returns to the same level as the regular cash balance.
+Shorting is a regular sell operation with [sell_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.sell_nb), but with one exception: it now involves the debt as well as the locked cash balance. Whenever we short, we are borrowing shares and selling them to buyers willing to pay the market price. This operation increases the cash balance and turns the position size negative. It also registers the received cash amount as a debt, and subtracts it from the free cash balance. Whenever we buy some shares back, the debt decreases proportionally to the value of the shares bought back, while the free cash might increase depending upon whether the price was higher or lower than the average short-selling price. Whenever we cover the short position entirely, the debt becomes zero and the free cash balance returns to the same level as the regular cash balance.
 
 Note
 
@@ -487,7 +493,7 @@ If we had to calculate the current portfolio value, it would still default to th
 
 ```
 
-As we see, the positive cash balance and the negative position size keep the total value in balance. Now, let's illustrate buying back some shares using [buy\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.buy_nb). First, we'll borrow 10 shares with 2x leverage and sell them for the price of $10 per share:
+As we see, the positive cash balance and the negative position size keep the total value in balance. Now, let's illustrate buying back some shares using [buy_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.buy_nb). First, we'll borrow 10 shares with 2x leverage and sell them for the price of $10 per share:
 
 ```
 >>> order_result, new_account_state = vbt.pf_nb.sell_nb(
@@ -735,7 +741,7 @@ AccountState(
 
 ```
 
-Is there a way to use only a subset of our own free cash while borrowing the rest? Yes! The command [buy\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.buy_nb) takes the argument `leverage_mode` of the type [LeverageMode](https://vectorbt.pro/pvt_40509f46/api/portfolio/enums/#vectorbtpro.portfolio.enums.LeverageMode), which supports two modes: "lazy" and "eager" leveraging. The first mode is the default one and enables leverage only if the quantity to be bought cannot be fulfilled using own resources. The second mode enables leverage for any quantity and requires the leverage to be set explicitly, that is, an infinite leverage would raise an error.
+Is there a way to use only a subset of our own free cash while borrowing the rest? Yes! The command [buy_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.buy_nb) takes the argument `leverage_mode` of the type [LeverageMode](https://vectorbt.pro/pvt_40509f46/api/portfolio/enums/#vectorbtpro.portfolio.enums.LeverageMode), which supports two modes: "lazy" and "eager" leveraging. The first mode is the default one and enables leverage only if the quantity to be bought cannot be fulfilled using own resources. The second mode enables leverage for any quantity and requires the leverage to be set explicitly, that is, an infinite leverage would raise an error.
 
 Note
 
@@ -1090,9 +1096,9 @@ AccountState(
 
 Note
 
-Using the [buy\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.buy_nb) and [sell\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.sell_nb) commands guarantees to execute the order in the long and short direction respectively.
+Using the [buy_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.buy_nb) and [sell_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.sell_nb) commands guarantees to execute the order in the long and short direction respectively.
 
-We can also use the commands that are guaranteed to execute within the current position and not open an opposite one: [long\_sell\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.long_sell_nb) for long positions and [short\_buy\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.short_buy_nb) for short positions. They don't require the argument `direction` at all, just the size of infinity:
+We can also use the commands that are guaranteed to execute within the current position and not open an opposite one: [long_sell_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.long_sell_nb) for long positions and [short_buy_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.short_buy_nb) for short positions. They don't require the argument `direction` at all, just the size of infinity:
 
 ```
 >>> account_state = vbt.pf_enums.AccountState(
@@ -1191,7 +1197,7 @@ We can validate the pipeline using one of the preset simulation methods:
 
 Using the primitive commands is fun as long as we exactly know the direction of the order and are sure that the provided arguments make sense. But very often, we have to deal with more complex requirements such as target percentages, which change the order direction depending on the current value. In addition, the commands do not validate their arguments; for example, there won't be any error thrown in a case when the user accidentally passes a negative order price. But also, we need a better representation of an order - it's a bad practice of passing all the parameters such as slippage as keyword arguments.
 
-All the checks and other pre-processing procedures are happening in the function [execute\_order\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.execute_order_nb). The first input to this function is an order execution state of type [ExecState](https://vectorbt.pro/pvt_40509f46/api/portfolio/enums/#vectorbtpro.portfolio.enums.ExecState), which contains the same information as an account state we saw above, but with additional information on the current valuation. The second input is a named tuple of type [Order](https://vectorbt.pro/pvt_40509f46/api/portfolio/enums/#vectorbtpro.portfolio.enums.Order) representing an order. The third argument is the price area, which we are also already familiar with.
+All the checks and other pre-processing procedures are happening in the function [execute_order_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.execute_order_nb). The first input to this function is an order execution state of type [ExecState](https://vectorbt.pro/pvt_40509f46/api/portfolio/enums/#vectorbtpro.portfolio.enums.ExecState), which contains the same information as an account state we saw above, but with additional information on the current valuation. The second input is a named tuple of type [Order](https://vectorbt.pro/pvt_40509f46/api/portfolio/enums/#vectorbtpro.portfolio.enums.Order) representing an order. The third argument is the price area, which we are also already familiar with.
 
 ### Order[¶](https://vectorbt.pro/pvt_40509f46/documentation/portfolio/#order "Permanent link")
 
@@ -1279,7 +1285,7 @@ Failed in nopython mode pipeline (step: nopython frontend)
 
 Another issue are data types. In the example above where we provided integer size and price, Numba had no issues processing them. But as soon as we create such as order in a loop and one of the arguments is a float instead of an integer provided previously, Numba will throw an error because it cannot unify data types anymore. Thus, we should cast all arguments to their target data types before constructing an order.
 
-Both issues are solved by using the function [order\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.order_nb):
+Both issues are solved by using the function [order_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.order_nb):
 
 ```
 >>> @njit
@@ -1293,7 +1299,7 @@ Order(size=1.0, price=15.0, ..., direction=2, ...)
 
 Notice how the size and price arguments were automatically cast to floats.
 
-To create an order that closes out the current position, we can conveniently use [close\_position\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.close_position_nb):
+To create an order that closes out the current position, we can conveniently use [close_position_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.close_position_nb):
 
 ```
 >>> vbt.pf_nb.close_position_nb(15)  
@@ -1303,7 +1309,7 @@ Order(size=0.0, price=15.0, size_type=6, ...)
 
 ### Validation[¶](https://vectorbt.pro/pvt_40509f46/documentation/portfolio/#validation "Permanent link")
 
-Having constructed the order, [execute\_order\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.execute_order_nb) will check the arguments of that order for correct data types and values. For example, let's try passing a negative price:
+Having constructed the order, [execute_order_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.execute_order_nb) will check the arguments of that order for correct data types and values. For example, let's try passing a negative price:
 
 ```
 >>> exec_state = vbt.pf_enums.ExecState(
@@ -1325,7 +1331,7 @@ ValueError: order.price must be finite and 0 or greater
 
 ### Price resolution[¶](https://vectorbt.pro/pvt_40509f46/documentation/portfolio/#price-resolution "Permanent link")
 
-After validating the inputs, [execute\_order\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.execute_order_nb) uses them to decide which command to run: buy or sell. But first, it has to do some preprocessing.
+After validating the inputs, [execute_order_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.execute_order_nb) uses them to decide which command to run: buy or sell. But first, it has to do some preprocessing.
 
 Even though vectorbt isn't associated with any particular data schema and can run on tick data just as well as on bar data, it still gives us an option to provide the current candle (`price_area`) for validation and resolution reasons. In such a case, it will consider the passed order price as a price point located within four price bounds: the opening, high, low, and closing price. Since order execution must happen strictly within those bounds, setting order price to `-np.inf` and `np.inf` will replace it by the opening and closing price respectively. Hence, next time, when you see any default price being `np.inf`, just know that it means the close price ![✍](https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/270d.svg ":writing_hand:")
 
@@ -1398,7 +1404,7 @@ ExecState(
 
 ```
 
-Since we're not in the market, vectorbt used [buy\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.buy_nb) to buy 3 shares. If we were in the market with 10 shares, it would have used [sell\_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.sell_nb) to sell 7 shares.
+Since we're not in the market, vectorbt used [buy_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.buy_nb) to buy 3 shares. If we were in the market with 10 shares, it would have used [sell_nb](https://vectorbt.pro/pvt_40509f46/api/portfolio/nb/core/#vectorbtpro.portfolio.nb.core.sell_nb) to sell 7 shares.
 
 ### Direction[¶](https://vectorbt.pro/pvt_40509f46/documentation/portfolio/#direction "Permanent link")
 

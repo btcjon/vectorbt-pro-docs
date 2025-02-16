@@ -1,3 +1,9 @@
+---
+id: parsers
+title: Indicator Parsers
+sidebar_label: Parsers
+---
+
 [IndicatorFactory](https://vectorbt.pro/pvt_40509f46/api/indicators/factory/#vectorbtpro.indicators.factory.IndicatorFactory) deploys a collection of parsers to simplify creation of indicators, ranging from third-party indicator parsers to a powerful expression parser.
 
 Info

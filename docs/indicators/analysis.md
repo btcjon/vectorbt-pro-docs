@@ -1,3 +1,9 @@
+---
+id: analysis
+title: Indicator Analysis
+sidebar_label: Analysis
+---
+
 To analyze an indicator, we can use the indicator instance returned by the `run` method.
 
 ## Helper methods[¶](https://vectorbt.pro/pvt_40509f46/documentation/indicators/analysis/#helper-methods "Permanent link")

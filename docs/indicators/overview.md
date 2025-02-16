@@ -1,3 +1,9 @@
+---
+id: overview
+title: Indicators Overview
+sidebar_label: Overview
+---
+
 Class [IndicatorFactory](https://vectorbt.pro/pvt_40509f46/api/indicators/factory/#vectorbtpro.indicators.factory.IndicatorFactory) is a one of the most powerful entities in the vectorbt's ecosystem - it can wrap any indicator function and make it parametrizable and analyzable.
 
 ## Pipeline[¶](https://vectorbt.pro/pvt_40509f46/documentation/indicators/#pipeline "Permanent link")

@@ -1,3 +1,9 @@
+---
+id: from-orders
+title: Portfolio from Orders
+sidebar_label: From Orders
+---
+
 Instead of building our custom simulator from scratch, we can make use of one of the preset simulation methods offered by vectorbt. There are three predominantly used methods: [Portfolio.from\_orders](https://vectorbt.pro/pvt_40509f46/api/portfolio/base/#vectorbtpro.portfolio.base.Portfolio.from_orders), [Portfolio.from\_signals](https://vectorbt.pro/pvt_40509f46/api/portfolio/base/#vectorbtpro.portfolio.base.Portfolio.from_signals), and [Portfolio.from\_order\_func](https://vectorbt.pro/pvt_40509f46/api/portfolio/base/#vectorbtpro.portfolio.base.Portfolio.from_order_func). Each one has its own benefits and drawbacks, but all of them follow the same iteration schema that we discussed previously: iterate over the rows and columns, and at each step, convert the current element of all the input data passed by the user into an order request, and process it by updating the current simulation state and by appending the filled order record to an array. This array along with other information can later be used during the reconstruction phase to analyze the simulation.
 
 [Portfolio.from\_orders](https://vectorbt.pro/pvt_40509f46/api/portfolio/base/#vectorbtpro.portfolio.base.Portfolio.from_orders) is the most basic method out of three: it doesn't take any UDFs, and allows us to provide every bit of information on orders as separate, broadcastable arrays. Literally **each** element across all the passed arrays will be converted into an instance of [Order](https://vectorbt.pro/pvt_40509f46/api/portfolio/enums/#vectorbtpro.portfolio.enums.Order) and processed as usual. Since the number of orders is limited by the number of elements in the passed arrays, we can issue **and execute** only one order per timestamp and asset.
