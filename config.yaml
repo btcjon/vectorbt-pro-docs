@@ -1,3 +1,8 @@
+title: VectorBT PRO Documentation
+description: Comprehensive documentation and tutorials for VectorBT PRO
+baseurl: "/vectorbt-pro-docs"
+url: "https://btcjon.github.io"
+
 plugins:
   - jekyll-relative-links
 relative_links:
@@ -15,31 +20,57 @@ include:
 markdown: kramdown
 theme: jekyll-theme-cayman
 
-# Navigation structure
-header_pages:
-  # Documentation
-  - index.md
-  - 2-building_blocks.md
-  - 3-data.md
-  - 4-data-local.md
-  - 5-data-remote.md
-  - 6-data-synthetic.md
-  - 7-data-scheduling.md
-  - 9-indicators.md
-  - 10-indicator-development.md
-  - 11-indicator-analysis.md
-  - 12-indicator-parsers.md
-  - 13-portfolio.md
-  - 14-portfolio-from-orders.md
-  - 15-portfolio-from-signals.md
-  # Tutorials
-  - VectorBT-PRO-Tutorials/0-installation.md
-  - VectorBT-PRO-Tutorials/1-Basic-RSI-Strategy.md
-  - VectorBT-PRO-Tutorials/2-SuperFast-SuperTrend.md
-  - VectorBT-PRO-Tutorials/3-Signal-Dev.md
-  - VectorBT-PRO-Tutorials/4-Stop-Signals.md
-  - VectorBT-PRO-Tutorials/5-MTF-Analysis.md
-  - VectorBT-PRO-Tutorials/6-Portfolio-Optimization.md
-  - VectorBT-PRO-Tutorials/7-Pairs-Trading.md
-  - VectorBT-PRO-Tutorials/8-Patterns.md
-  - VectorBT-PRO-Tutorials/9-Cross-Validation.md
+# Navigation Menu Items
+navigation:
+  - title: Documentation
+    children:
+      - title: General Design
+        url: /
+      - title: Building Blocks
+        url: /2-building_blocks
+      - title: Data
+        url: /3-data
+      - title: Data Local
+        url: /4-data-local
+      - title: Data Remote
+        url: /5-data-remote
+      - title: Data Synthetic
+        url: /6-data-synthetic
+      - title: Data Scheduling
+        url: /7-data-scheduling
+      - title: Indicators
+        url: /9-indicators
+      - title: Indicator Development
+        url: /10-indicator-development
+      - title: Indicator Analysis
+        url: /11-indicator-analysis
+      - title: Indicator Parsers
+        url: /12-indicator-parsers
+      - title: Portfolio
+        url: /13-portfolio
+      - title: Portfolio from Orders
+        url: /14-portfolio-from-orders
+      - title: Portfolio from Signals
+        url: /15-portfolio-from-signals
+  - title: Tutorials
+    children:
+      - title: Installation
+        url: /VectorBT-PRO-Tutorials/0-installation
+      - title: Basic RSI Strategy
+        url: /VectorBT-PRO-Tutorials/1-Basic-RSI-Strategy
+      - title: SuperFast SuperTrend
+        url: /VectorBT-PRO-Tutorials/2-SuperFast-SuperTrend
+      - title: Signal Development
+        url: /VectorBT-PRO-Tutorials/3-Signal-Dev
+      - title: Stop Signals
+        url: /VectorBT-PRO-Tutorials/4-Stop-Signals
+      - title: MTF Analysis
+        url: /VectorBT-PRO-Tutorials/5-MTF-Analysis
+      - title: Portfolio Optimization
+        url: /VectorBT-PRO-Tutorials/6-Portfolio-Optimization
+      - title: Pairs Trading
+        url: /VectorBT-PRO-Tutorials/7-Pairs-Trading
+      - title: Patterns
+        url: /VectorBT-PRO-Tutorials/8-Patterns
+      - title: Cross Validation
+        url: /VectorBT-PRO-Tutorials/9-Cross-Validation
