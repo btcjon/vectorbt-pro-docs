@@ -13,3 +13,33 @@ include:
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
 markdown: kramdown
+theme: jekyll-theme-cayman
+
+# Navigation structure
+header_pages:
+  # Documentation
+  - index.md
+  - 2-building_blocks.md
+  - 3-data.md
+  - 4-data-local.md
+  - 5-data-remote.md
+  - 6-data-synthetic.md
+  - 7-data-scheduling.md
+  - 9-indicators.md
+  - 10-indicator-development.md
+  - 11-indicator-analysis.md
+  - 12-indicator-parsers.md
+  - 13-portfolio.md
+  - 14-portfolio-from-orders.md
+  - 15-portfolio-from-signals.md
+  # Tutorials
+  - VectorBT-PRO-Tutorials/0-installation.md
+  - VectorBT-PRO-Tutorials/1-Basic-RSI-Strategy.md
+  - VectorBT-PRO-Tutorials/2-SuperFast-SuperTrend.md
+  - VectorBT-PRO-Tutorials/3-Signal-Dev.md
+  - VectorBT-PRO-Tutorials/4-Stop-Signals.md
+  - VectorBT-PRO-Tutorials/5-MTF-Analysis.md
+  - VectorBT-PRO-Tutorials/6-Portfolio-Optimization.md
+  - VectorBT-PRO-Tutorials/7-Pairs-Trading.md
+  - VectorBT-PRO-Tutorials/8-Patterns.md
+  - VectorBT-PRO-Tutorials/9-Cross-Validation.md
