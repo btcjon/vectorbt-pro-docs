@@ -1,3 +1,9 @@
+---
+id: local
+title: Data Local
+sidebar_label: Local
+---
+
 Repeatedly hitting remote API endpoints is costly, thus it's very important to cache data locally. Luckily, vectorbt implements a range of ways for managing local data.
 
 ## Pickling[¶](https://vectorbt.pro/pvt_40509f46/documentation/data/local/#pickling "Permanent link")
