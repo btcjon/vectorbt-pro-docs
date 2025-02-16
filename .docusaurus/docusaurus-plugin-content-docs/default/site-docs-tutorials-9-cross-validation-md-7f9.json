@@ -1,0 +1,21 @@
+{
+  "id": "tutorials/Cross-Validation",
+  "title": "Cross-Validation",
+  "description": "Once we develop a rule-based or ML-based strategy, it's time to backtest it. The first time around we obtain a low Sharpe ratio we're unhappy with, we decide to tweak our strategy. Eventually, after multiple iterations of tweaking parameters, we end up with a \"flawless\" combination of parameters and a strategy with an exceptional Sharpe ratio. However, in live trading the performance took a different turn: we essentially tanked and lost money. What went wrong?",
+  "source": "@site/docs/tutorials/9-Cross-Validation.md",
+  "sourceDirName": "tutorials",
+  "slug": "/tutorials/Cross-Validation",
+  "permalink": "/tutorials/Cross-Validation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/tutorials/9-Cross-Validation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {},
+  "sidebar": "tutorialsSidebar",
+  "previous": {
+    "title": "Patterns",
+    "permalink": "/tutorials/Patterns"
+  }
+}

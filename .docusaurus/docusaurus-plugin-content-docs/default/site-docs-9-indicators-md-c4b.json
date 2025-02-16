@@ -1,0 +1,25 @@
+{
+  "id": "indicators",
+  "title": "indicators",
+  "description": "Class IndicatorFactory is a one of the most powerful entities in the vectorbt's ecosystem - it can wrap any indicator function and make it parametrizable and analyzable.",
+  "source": "@site/docs/9-indicators.md",
+  "sourceDirName": ".",
+  "slug": "/indicators",
+  "permalink": "/indicators",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/9-indicators.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {},
+  "sidebar": "documentationSidebar",
+  "previous": {
+    "title": "data-scheduling",
+    "permalink": "/data-scheduling"
+  },
+  "next": {
+    "title": "indicator-development",
+    "permalink": "/indicator-development"
+  }
+}

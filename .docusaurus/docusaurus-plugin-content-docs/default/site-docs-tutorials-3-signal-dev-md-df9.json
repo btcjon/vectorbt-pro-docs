@@ -1,0 +1,25 @@
+{
+  "id": "tutorials/Signal-Dev",
+  "title": "Signal-Dev",
+  "description": "Signals are an additional level of abstraction added on top of orders: instead of specifying every bit of information on what needs to be ordered at each timestamp, we can first decide on what a typical order should look like, and then choose the timing of issuing such an order. The latter decision process can be realized through signals, which in the vectorbt's world are represented by a boolean mask where True means \"order\" and False means \"no order\". Additionally, we can change the meaning of each signal statically, or dynamically based on the current simulation state; for example, we can instruct the simulator to ignore an \"order\" signal if we're already in the market, which cannot be done by using the \"from-orders\" method alone. Finally, vectorbt loves data science, and so comparing multiple strategies with the same trading conditions but different signal permutations (i.e., order timings and directions) is much easier, less error-prone, and generally leads to fairer experiments.",
+  "source": "@site/docs/tutorials/3-Signal-Dev.md",
+  "sourceDirName": "tutorials",
+  "slug": "/tutorials/Signal-Dev",
+  "permalink": "/tutorials/Signal-Dev",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/tutorials/3-Signal-Dev.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialsSidebar",
+  "previous": {
+    "title": "SuperFast SuperTrend",
+    "permalink": "/tutorials/SuperFast-SuperTrend"
+  },
+  "next": {
+    "title": "Stop Signals",
+    "permalink": "/tutorials/Stop-Signals"
+  }
+}

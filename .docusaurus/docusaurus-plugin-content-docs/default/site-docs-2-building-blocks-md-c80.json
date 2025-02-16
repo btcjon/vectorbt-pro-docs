@@ -1,0 +1,25 @@
+{
+  "id": "building_blocks",
+  "title": "building_blocks",
+  "description": "In what follows, we will look at sub-packages, modules, and especially classes that act as building blocks for more advanced functionalities distributed across vectorbt, such as Portfolio. For illustration, we will gradually build our custom class CorrStats that will let us analyze the correlation between two arrays in the most performant and flexible way 🧠",
+  "source": "@site/docs/2-building_blocks.md",
+  "sourceDirName": ".",
+  "slug": "/building_blocks",
+  "permalink": "/building_blocks",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/2-building_blocks.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "documentationSidebar",
+  "previous": {
+    "title": "General Design",
+    "permalink": "/intro"
+  },
+  "next": {
+    "title": "data",
+    "permalink": "/data"
+  }
+}

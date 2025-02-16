@@ -1,0 +1,25 @@
+{
+  "id": "indicator-analysis",
+  "title": "indicator-analysis",
+  "description": "To analyze an indicator, we can use the indicator instance returned by the run method.",
+  "source": "@site/docs/11-indicator-analysis.md",
+  "sourceDirName": ".",
+  "slug": "/indicator-analysis",
+  "permalink": "/indicator-analysis",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/11-indicator-analysis.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {},
+  "sidebar": "documentationSidebar",
+  "previous": {
+    "title": "indicator-development",
+    "permalink": "/indicator-development"
+  },
+  "next": {
+    "title": "indicator-parsers",
+    "permalink": "/indicator-parsers"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "portfolio-from-orders",
+  "title": "portfolio-from-orders",
+  "description": "Instead of building our custom simulator from scratch, we can make use of one of the preset simulation methods offered by vectorbt. There are three predominantly used methods iterate over the rows and columns, and at each step, convert the current element of all the input data passed by the user into an order request, and process it by updating the current simulation state and by appending the filled order record to an array. This array along with other information can later be used during the reconstruction phase to analyze the simulation.",
+  "source": "@site/docs/14-portfolio-from-orders.md",
+  "sourceDirName": ".",
+  "slug": "/portfolio-from-orders",
+  "permalink": "/portfolio-from-orders",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/14-portfolio-from-orders.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 14,
+  "frontMatter": {},
+  "sidebar": "documentationSidebar",
+  "previous": {
+    "title": "portfolio",
+    "permalink": "/portfolio"
+  },
+  "next": {
+    "title": "portfolio-from-signals",
+    "permalink": "/portfolio-from-signals"
+  }
+}

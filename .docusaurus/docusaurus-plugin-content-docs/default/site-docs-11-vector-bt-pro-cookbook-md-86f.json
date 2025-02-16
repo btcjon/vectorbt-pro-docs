@@ -1,0 +1,16 @@
+{
+  "id": "vectorBT-PRO-cookbook",
+  "title": "vectorBT-PRO-cookbook",
+  "description": "Displaying¶",
+  "source": "@site/docs/11-vectorBT-PRO-cookbook.md",
+  "sourceDirName": ".",
+  "slug": "/vectorBT-PRO-cookbook",
+  "permalink": "/vectorBT-PRO-cookbook",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/11-vectorBT-PRO-cookbook.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {}
+}

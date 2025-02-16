@@ -1,0 +1,25 @@
+{
+  "id": "tutorials/Pairs-Trading",
+  "title": "Pairs-Trading",
+  "description": "A pairs trading strategy is a statistical arbitrage and convergence strategy that is based on the historical correlation of two instruments and involves matching a long position with a short position. The two offsetting positions form the basis for a hedging strategy that seeks to benefit from either a positive or negative trend. A high positive correlation (mostly a minimum of 0.8) of both instruments is the primary driver behind the strategy's profits. Whenever the correlation eventually deviates, we would seek to buy the underperforming instrument and sell short the outperforming instrument. If the securities return to their historical correlation (which is what we bet on!), a profit is made from the convergence of the prices. Thus, pairs trading is used to generate profits regardless of any market condition: uptrend, downtrend, or sideways.",
+  "source": "@site/docs/tutorials/7-Pairs-Trading.md",
+  "sourceDirName": "tutorials",
+  "slug": "/tutorials/Pairs-Trading",
+  "permalink": "/tutorials/Pairs-Trading",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/tutorials/7-Pairs-Trading.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {},
+  "sidebar": "tutorialsSidebar",
+  "previous": {
+    "title": "Portfolio Optimization",
+    "permalink": "/tutorials/Portfolio-Optimization"
+  },
+  "next": {
+    "title": "Patterns",
+    "permalink": "/tutorials/Patterns"
+  }
+}

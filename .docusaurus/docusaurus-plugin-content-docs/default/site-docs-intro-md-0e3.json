@@ -1,0 +1,20 @@
+{
+  "id": "intro",
+  "title": "VectorBT PRO Documentation",
+  "description": "Navigation",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "documentationSidebar",
+  "next": {
+    "title": "Building Blocks",
+    "permalink": "/building_blocks"
+  }
+}

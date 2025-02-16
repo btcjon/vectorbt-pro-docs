@@ -1,0 +1,25 @@
+{
+  "id": "data-scheduling",
+  "title": "data-scheduling",
+  "description": "Most data sources aren't sitting idle: they steadily generate new data. To keep up with new information, we can utilize a schedule manager (or even the simplest while-loop) to periodically run jobs related to data capturing and manipulation.",
+  "source": "@site/docs/7-data-scheduling.md",
+  "sourceDirName": ".",
+  "slug": "/data-scheduling",
+  "permalink": "/data-scheduling",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/7-data-scheduling.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {},
+  "sidebar": "documentationSidebar",
+  "previous": {
+    "title": "data-synthetic",
+    "permalink": "/data-synthetic"
+  },
+  "next": {
+    "title": "indicators",
+    "permalink": "/indicators"
+  }
+}

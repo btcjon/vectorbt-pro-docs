@@ -1,0 +1,15 @@
+{
+  "id": "README",
+  "title": "VectorBT PRO Documentation",
+  "description": "This is the official documentation for VectorBT PRO, built with Docusaurus 3.",
+  "source": "@site/docs/README.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

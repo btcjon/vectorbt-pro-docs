@@ -1,0 +1,21 @@
+{
+  "id": "portfolio-from-signals",
+  "title": "portfolio-from-signals",
+  "description": "The method Portfolio.from\\orders (FO), which was discussed previously, is the most primitive simulation method: it takes order information in form of multiple array-like arguments and broadcasts them to a single shape, such that we know exactly what has to be ordered of each asset at each bar. This method requires us to have that information in advance, regardless of any events during the simulation. But what if we wanted to create an order only given that we're not currently in the market, or in general, to make an order dependable on the current simulation state? Such a conditional logic cannot be represented using orders alone - we either need to use a callback, or define more arrays. The former and the latter are both implemented by Portfolio.from\\signals (FS).",
+  "source": "@site/docs/15-portfolio-from-signals.md",
+  "sourceDirName": ".",
+  "slug": "/portfolio-from-signals",
+  "permalink": "/portfolio-from-signals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/15-portfolio-from-signals.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 15,
+  "frontMatter": {},
+  "sidebar": "documentationSidebar",
+  "previous": {
+    "title": "portfolio-from-orders",
+    "permalink": "/portfolio-from-orders"
+  }
+}

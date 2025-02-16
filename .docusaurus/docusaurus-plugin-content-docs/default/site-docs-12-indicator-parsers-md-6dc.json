@@ -1,0 +1,25 @@
+{
+  "id": "indicator-parsers",
+  "title": "indicator-parsers",
+  "description": "IndicatorFactory deploys a collection of parsers to simplify creation of indicators, ranging from third-party indicator parsers to a powerful expression parser.",
+  "source": "@site/docs/12-indicator-parsers.md",
+  "sourceDirName": ".",
+  "slug": "/indicator-parsers",
+  "permalink": "/indicator-parsers",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/12-indicator-parsers.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {},
+  "sidebar": "documentationSidebar",
+  "previous": {
+    "title": "indicator-analysis",
+    "permalink": "/indicator-analysis"
+  },
+  "next": {
+    "title": "portfolio",
+    "permalink": "/portfolio"
+  }
+}

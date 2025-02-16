@@ -1,0 +1,25 @@
+{
+  "id": "tutorials/Patterns",
+  "title": "Patterns",
+  "description": "Patterns provide a sense of order in what might otherwise appear chaotic. They tend to emerge everywhere in nature: shapes like circles in road signs or the rectangles in windows and doors. Just like children who gradually learn how to function in a completely unknown environment by looking for regularities, financial market participants need to learn how to navigate their complex, ever-changing environment as well. And just like our little fellows who have parents and teachers to assist their learning process (and Google, of course), we have a wonderful tool to assist ours — quantitative analysis.",
+  "source": "@site/docs/tutorials/8-Patterns.md",
+  "sourceDirName": "tutorials",
+  "slug": "/tutorials/Patterns",
+  "permalink": "/tutorials/Patterns",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/tutorials/8-Patterns.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {},
+  "sidebar": "tutorialsSidebar",
+  "previous": {
+    "title": "Pairs Trading",
+    "permalink": "/tutorials/Pairs-Trading"
+  },
+  "next": {
+    "title": "Cross Validation",
+    "permalink": "/tutorials/Cross-Validation"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "data-local",
+  "title": "data-local",
+  "description": "Repeatedly hitting remote API endpoints is costly, thus it's very important to cache data locally. Luckily, vectorbt implements a range of ways for managing local data.",
+  "source": "@site/docs/4-data-local.md",
+  "sourceDirName": ".",
+  "slug": "/data-local",
+  "permalink": "/data-local",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/4-data-local.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "documentationSidebar",
+  "previous": {
+    "title": "data",
+    "permalink": "/data"
+  },
+  "next": {
+    "title": "data-remote",
+    "permalink": "/data-remote"
+  }
+}

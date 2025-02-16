@@ -1,0 +1,162 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/",
+          "mainDocId": "README",
+          "docs": [
+            {
+              "id": "building_blocks",
+              "path": "/building_blocks",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "data",
+              "path": "/data",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "data-local",
+              "path": "/data-local",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "data-remote",
+              "path": "/data-remote",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "data-scheduling",
+              "path": "/data-scheduling",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "data-synthetic",
+              "path": "/data-synthetic",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "indicator-analysis",
+              "path": "/indicator-analysis",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "indicator-development",
+              "path": "/indicator-development",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "indicator-parsers",
+              "path": "/indicator-parsers",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "indicators",
+              "path": "/indicators",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/intro",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "portfolio",
+              "path": "/portfolio",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "portfolio-from-orders",
+              "path": "/portfolio-from-orders",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "portfolio-from-signals",
+              "path": "/portfolio-from-signals",
+              "sidebar": "documentationSidebar"
+            },
+            {
+              "id": "README",
+              "path": "/"
+            },
+            {
+              "id": "tutorials/Basic-RSI-Strategy",
+              "path": "/tutorials/Basic-RSI-Strategy",
+              "sidebar": "tutorialsSidebar"
+            },
+            {
+              "id": "tutorials/Cross-Validation",
+              "path": "/tutorials/Cross-Validation",
+              "sidebar": "tutorialsSidebar"
+            },
+            {
+              "id": "tutorials/installation",
+              "path": "/tutorials/installation",
+              "sidebar": "tutorialsSidebar"
+            },
+            {
+              "id": "tutorials/MTF-Analysis",
+              "path": "/tutorials/MTF-Analysis",
+              "sidebar": "tutorialsSidebar"
+            },
+            {
+              "id": "tutorials/Pairs-Trading",
+              "path": "/tutorials/Pairs-Trading",
+              "sidebar": "tutorialsSidebar"
+            },
+            {
+              "id": "tutorials/Patterns",
+              "path": "/tutorials/Patterns",
+              "sidebar": "tutorialsSidebar"
+            },
+            {
+              "id": "tutorials/Portfolio-Optimization",
+              "path": "/tutorials/Portfolio-Optimization",
+              "sidebar": "tutorialsSidebar"
+            },
+            {
+              "id": "tutorials/Signal-Dev",
+              "path": "/tutorials/Signal-Dev",
+              "sidebar": "tutorialsSidebar"
+            },
+            {
+              "id": "tutorials/Stop-Signals",
+              "path": "/tutorials/Stop-Signals",
+              "sidebar": "tutorialsSidebar"
+            },
+            {
+              "id": "tutorials/SuperFast-SuperTrend",
+              "path": "/tutorials/SuperFast-SuperTrend",
+              "sidebar": "tutorialsSidebar"
+            },
+            {
+              "id": "vectorBT-PRO-cookbook",
+              "path": "/vectorBT-PRO-cookbook"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "documentationSidebar": {
+              "link": {
+                "path": "/intro",
+                "label": "General Design"
+              }
+            },
+            "tutorialsSidebar": {
+              "link": {
+                "path": "/tutorials/installation",
+                "label": "Installation"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

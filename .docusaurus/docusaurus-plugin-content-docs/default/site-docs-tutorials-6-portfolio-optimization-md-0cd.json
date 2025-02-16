@@ -1,0 +1,25 @@
+{
+  "id": "tutorials/Portfolio-Optimization",
+  "title": "Portfolio-Optimization",
+  "description": "Portfolio optimization is all about creating a portfolio of assets such that our investment has the maximum return and minimum risk. A portfolio in this regard is the asset distribution of an investor - a weight vector, which can be well optimized for risk appetite, expected rate of return, cost minimization, and other target metrics. Moreover, such optimization can be performed on a regular basis to account for any recent changes in the market behavior.",
+  "source": "@site/docs/tutorials/6-Portfolio-Optimization.md",
+  "sourceDirName": "tutorials",
+  "slug": "/tutorials/Portfolio-Optimization",
+  "permalink": "/tutorials/Portfolio-Optimization",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/tutorials/6-Portfolio-Optimization.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {},
+  "sidebar": "tutorialsSidebar",
+  "previous": {
+    "title": "MTF Analysis",
+    "permalink": "/tutorials/MTF-Analysis"
+  },
+  "next": {
+    "title": "Pairs Trading",
+    "permalink": "/tutorials/Pairs-Trading"
+  }
+}

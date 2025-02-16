@@ -1,0 +1,17 @@
+{
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["DOM", "ESNext"],
+    "noEmit": true,
+    "types": ["@docusaurus/module-type-aliases", "node"],
+    "paths": {
+      "@site/*": ["./*"]
+    },
+    "skipLibCheck": true
+  }
+} 

@@ -1,0 +1,25 @@
+{
+  "id": "tutorials/Stop-Signals",
+  "title": "Stop-Signals",
+  "description": "Our goal is to utilize large-scale backtesting to compare the performance of trading with and without stop loss (SL), trailing stop (TS), and take profit (TP) signals. To make this attempt representative, we will run a huge number of experiments across three different dimensions: instruments, time, and parameters.",
+  "source": "@site/docs/tutorials/4-Stop-Signals.md",
+  "sourceDirName": "tutorials",
+  "slug": "/tutorials/Stop-Signals",
+  "permalink": "/tutorials/Stop-Signals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/tutorials/4-Stop-Signals.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialsSidebar",
+  "previous": {
+    "title": "Signal Development",
+    "permalink": "/tutorials/Signal-Dev"
+  },
+  "next": {
+    "title": "MTF Analysis",
+    "permalink": "/tutorials/MTF-Analysis"
+  }
+}

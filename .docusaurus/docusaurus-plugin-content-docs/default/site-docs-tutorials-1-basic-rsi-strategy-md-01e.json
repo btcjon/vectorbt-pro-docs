@@ -1,0 +1,25 @@
+{
+  "id": "tutorials/Basic-RSI-Strategy",
+  "title": "Basic-RSI-Strategy",
+  "description": "One of the main powers of vectorbt (PRO) is the ability to create and backtest numerous strategy configurations in the blink of an eye. In this introductory example, we will explore how profitable is the following RSI strategy commonly used by beginners:",
+  "source": "@site/docs/tutorials/1-Basic-RSI-Strategy.md",
+  "sourceDirName": "tutorials",
+  "slug": "/tutorials/Basic-RSI-Strategy",
+  "permalink": "/tutorials/Basic-RSI-Strategy",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/tutorials/1-Basic-RSI-Strategy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialsSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/tutorials/installation"
+  },
+  "next": {
+    "title": "SuperFast SuperTrend",
+    "permalink": "/tutorials/SuperFast-SuperTrend"
+  }
+}

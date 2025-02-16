@@ -1,0 +1,25 @@
+{
+  "id": "indicator-development",
+  "title": "indicator-development",
+  "description": "VectorBT PRO implements a ton of functions and arguments for seamless development of indicators. All it takes is an indicator function and a specification of how to handle it.",
+  "source": "@site/docs/10-indicator-development.md",
+  "sourceDirName": ".",
+  "slug": "/indicator-development",
+  "permalink": "/indicator-development",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/10-indicator-development.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {},
+  "sidebar": "documentationSidebar",
+  "previous": {
+    "title": "indicators",
+    "permalink": "/indicators"
+  },
+  "next": {
+    "title": "indicator-analysis",
+    "permalink": "/indicator-analysis"
+  }
+}

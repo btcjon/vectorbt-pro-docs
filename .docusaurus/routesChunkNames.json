@@ -1,0 +1,169 @@
+{
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    },
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/-2e1": {
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__context": {
+      "plugin": "plugin---a-74-9d6"
+    },
+    "config": "config---5-e-9-4f3"
+  },
+  "/-68f": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---aba-d70"
+    }
+  },
+  "/-e55": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---22-d-307"
+  },
+  "/-ed5": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/building_blocks-400": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---building-blocksc-80-7de"
+  },
+  "/data-f68": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---data-1-b-8-6f4"
+  },
+  "/data-local-ce3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---data-local-37-b-e50"
+  },
+  "/data-remote-9b9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---data-remoteca-4-be4"
+  },
+  "/data-scheduling-4d7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---data-scheduling-72-d-f56"
+  },
+  "/data-synthetic-ec6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---data-syntheticee-7-77a"
+  },
+  "/indicator-analysis-bba": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---indicator-analysis-4-e-3-bcc"
+  },
+  "/indicator-development-4ad": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---indicator-development-7-a-4-f22"
+  },
+  "/indicator-parsers-03f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---indicator-parsers-6-dc-2e8"
+  },
+  "/indicators-d4b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---indicatorsc-4-b-47d"
+  },
+  "/intro-bd0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---intro-0-e-3-7b8"
+  },
+  "/portfolio-475": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---portfolio-45-a-add"
+  },
+  "/portfolio-from-orders-17a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---portfolio-from-orders-448-94a"
+  },
+  "/portfolio-from-signals-a32": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---portfolio-from-signalsccf-f21"
+  },
+  "/tutorials/Basic-RSI-Strategy-695": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---tutorials-basic-rsi-strategy-01-e-957"
+  },
+  "/tutorials/Cross-Validation-646": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---tutorials-cross-validation-7-f-9-b29"
+  },
+  "/tutorials/installation-6f7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---tutorials-installation-85-b-525"
+  },
+  "/tutorials/MTF-Analysis-26e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---tutorials-mtf-analysis-34-c-fbc"
+  },
+  "/tutorials/Pairs-Trading-af9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---tutorials-pairs-trading-85-f-5ff"
+  },
+  "/tutorials/Patterns-8c5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---tutorials-patternsc-2-e-b5b"
+  },
+  "/tutorials/Portfolio-Optimization-130": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---tutorials-portfolio-optimization-0-cd-aab"
+  },
+  "/tutorials/Signal-Dev-26d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---tutorials-signal-devdf-9-eda"
+  },
+  "/tutorials/Stop-Signals-e79": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---tutorials-stop-signals-316-680"
+  },
+  "/tutorials/SuperFast-SuperTrend-f97": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---tutorials-super-fast-super-trend-6-a-8-9ba"
+  },
+  "/vectorBT-PRO-cookbook-1c8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---vector-bt-pro-cookbook-86-f-863"
+  },
+  "/-48d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---233-28b"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "tutorials/installation",
+  "title": "installation",
+  "description": "Info",
+  "source": "@site/docs/tutorials/0-installation.md",
+  "sourceDirName": "tutorials",
+  "slug": "/tutorials/installation",
+  "permalink": "/tutorials/installation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/tutorials/0-installation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {},
+  "sidebar": "tutorialsSidebar",
+  "next": {
+    "title": "Basic RSI Strategy",
+    "permalink": "/tutorials/Basic-RSI-Strategy"
+  }
+}

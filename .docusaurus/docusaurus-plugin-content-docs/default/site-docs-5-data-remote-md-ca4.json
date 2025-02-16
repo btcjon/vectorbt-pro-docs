@@ -1,0 +1,25 @@
+{
+  "id": "data-remote",
+  "title": "data-remote",
+  "description": "Data classes that subclass RemoteData specialize in pulling (mostly OHLCV) data from remote data sources. In contrast to the classes for locally stored data, they communicate with remote API endpoints and are subject to authentication, authorization, throttling, and other mechanisms that must be taken into account. Also, the amount of data to be fetched is usually not known in advance, and because most data providers have API rate limits and can return only a limited amount of data for each incoming request, there is often a need to iterate over smaller bunches of data and properly concatenate them. Fortunately, vectorbt implements a number of preset data classes that can do all the jobs above automatically.",
+  "source": "@site/docs/5-data-remote.md",
+  "sourceDirName": ".",
+  "slug": "/data-remote",
+  "permalink": "/data-remote",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/5-data-remote.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "documentationSidebar",
+  "previous": {
+    "title": "data-local",
+    "permalink": "/data-local"
+  },
+  "next": {
+    "title": "data-synthetic",
+    "permalink": "/data-synthetic"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "tutorials/SuperFast-SuperTrend",
+  "title": "SuperFast-SuperTrend",
+  "description": "While Python is slower than many compiled languages, it's easy to use and extremely diverse. For many, especially in the data science domain, the practicality of the language beats the speed considerations - it's like a Swiss army knife for programmers and researchers alike.",
+  "source": "@site/docs/tutorials/2-SuperFast-SuperTrend.md",
+  "sourceDirName": "tutorials",
+  "slug": "/tutorials/SuperFast-SuperTrend",
+  "permalink": "/tutorials/SuperFast-SuperTrend",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/tutorials/2-SuperFast-SuperTrend.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialsSidebar",
+  "previous": {
+    "title": "Basic RSI Strategy",
+    "permalink": "/tutorials/Basic-RSI-Strategy"
+  },
+  "next": {
+    "title": "Signal Development",
+    "permalink": "/tutorials/Signal-Dev"
+  }
+}

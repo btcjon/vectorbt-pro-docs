@@ -1,0 +1,25 @@
+{
+  "id": "portfolio",
+  "title": "portfolio",
+  "description": "Portfolio refers to any combination of financial assets held by a trader. In the world of vectorbt, \"portfolio\" is a multidimensional structure capable of simulating and tracking multiple independent but also dependent portfolio instances. The main function of a portfolio is to apply a trading logic on a set of inputs to simulate a realistic trading environment, also referred to as \"simulation\". The outputs of such a simulation are orders and other information that can be used by the user in assessing the portfolio's performance, also referred to as \"reconstruction\" or \"post-analysis\". Both phases are isolated in nature, which enables various interesting use cases for quantitative analysis and data science.",
+  "source": "@site/docs/13-portfolio.md",
+  "sourceDirName": ".",
+  "slug": "/portfolio",
+  "permalink": "/portfolio",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/13-portfolio.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {},
+  "sidebar": "documentationSidebar",
+  "previous": {
+    "title": "indicator-parsers",
+    "permalink": "/indicator-parsers"
+  },
+  "next": {
+    "title": "portfolio-from-orders",
+    "permalink": "/portfolio-from-orders"
+  }
+}

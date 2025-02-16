@@ -1,0 +1,25 @@
+{
+  "id": "data",
+  "title": "data",
+  "description": "VectorBT PRO works on Pandas and NumPy arrays, but where those arrays are coming from? Getting the financial data manually is a challenging task, especially when an exchange can return only one bunch of data at a time such that iteration over time ranges, concatenation of results, and alignment of index and columns are effectively outsourced to the user. The task gets only trickier when multiple symbols are involved.",
+  "source": "@site/docs/3-data.md",
+  "sourceDirName": ".",
+  "slug": "/data",
+  "permalink": "/data",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/3-data.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "documentationSidebar",
+  "previous": {
+    "title": "Building Blocks",
+    "permalink": "/building_blocks"
+  },
+  "next": {
+    "title": "data-local",
+    "permalink": "/data-local"
+  }
+}

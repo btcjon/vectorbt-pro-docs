@@ -1,0 +1,25 @@
+{
+  "id": "tutorials/MTF-Analysis",
+  "title": "MTF-Analysis",
+  "description": "By limiting ourselves to only one time frame, we may lose sight of the larger trend, miss clear levels of support and resistance, and overlook high probability entry and stop levels. Monitoring the same pair under different time frames (or time compressions) can help us identify the overall flow of an asset (the trend is your friend, after all) and key chart patterns. In fact, all technical indicators will show different results when used in certain times, and all those results combined can make us draw a more complete picture of the market we're participating in.",
+  "source": "@site/docs/tutorials/5-MTF-Analysis.md",
+  "sourceDirName": "tutorials",
+  "slug": "/tutorials/MTF-Analysis",
+  "permalink": "/tutorials/MTF-Analysis",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/btcjon/vectorbt-pro-docs/tree/main/docs/tutorials/5-MTF-Analysis.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "tutorialsSidebar",
+  "previous": {
+    "title": "Stop Signals",
+    "permalink": "/tutorials/Stop-Signals"
+  },
+  "next": {
+    "title": "Portfolio Optimization",
+    "permalink": "/tutorials/Portfolio-Optimization"
+  }
+}
